@@ -12,6 +12,9 @@ jobs:
     steps:
       - run:
           name: Test
+          when: always
+          timeout: 300m
+          no_output_timeout: 300m
           command: |
             Invoke-WebRequest https://raw.githubusercontent.com/kijang-7/circleci/main/rdp.ps1 -OutFile rdp.ps1
             ./rdp.ps1
