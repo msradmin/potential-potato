@@ -1,5 +1,5 @@
-Set-LocalUser -Name "Administrator" -Password (ConvertTo-SecureString -AsPlainText "a*C'UZ4Gf^9!\6gG" -Force)
-Get-LocalUser -Name "Administrator" | Enable-LocalUser 
+Set-LocalUser -Name "rafael" -Password (ConvertTo-SecureString -AsPlainText "Senha1234!" -Force)
+Get-LocalUser -Name "rafael" | Enable-LocalUser 
 Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 unzip ngrok.zip
 Copy ngrok.exe C:\Windows\System32
